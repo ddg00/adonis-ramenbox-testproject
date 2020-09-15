@@ -1,0 +1,199 @@
+{
+  "info": {
+    "title": "Adonis 💘 Swagger",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "securityDefinitions": {
+    "ApiKey": {
+      "description": "ApiKey description",
+      "name": "Authorization"
+    },
+    "OAuth2": {
+      "authorizationUrl": "https://example.com/oauth/authorize",
+      "tokenUrl": "https://example.com/oauth/token",
+      "scopes": {
+        "read": "Grants read access (this is just sample)",
+        "write": "Grants write access (this is just sample)",
+        "admin": "Grants read and write access to administrative information (this is just sample)"
+      }
+    }
+  },
+  "swagger": "2.0",
+  "paths": {
+    "/api/v1/cluster": {
+      "get": {
+        "tags": [
+          "Cluster"
+        ],
+        "description": "sample",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "sample"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Cluster"
+        ],
+        "description": "sample",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Cluster object that needs to be added",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/_Cluster"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "sample"
+          }
+        }
+      }
+    },
+    "/api/v1/cluster/{id}": {
+      "get": {
+        "tags": [
+          "Cluster"
+        ],
+        "description": "sample",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "sample"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Cluster"
+        ],
+        "description": "sample",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Cluster object that needs to be update",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/_Cluster"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "sample"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Cluster"
+        ],
+        "description": "sample",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "sample"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "_Cluster": {
+      "type": "object",
+      "description": "relations \n ",
+      "properties": {
+        "slug": {
+          "type": "string",
+          "description": "this property is generated, type may be not string"
+        },
+        "name": {
+          "type": "string",
+          "description": "this property is generated, type may be not string"
+        },
+        "published": {
+          "type": "string",
+          "description": "this property is generated, type may be not string"
+        }
+      }
+    },
+    "Cluster": {
+      "type": "object",
+      "description": "relations \n ",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "this property is generated, type may be not integer"
+        },
+        "slug": {
+          "type": "string",
+          "description": "this property is generated, type may be not string"
+        },
+        "name": {
+          "type": "string",
+          "description": "this property is generated, type may be not string"
+        },
+        "published": {
+          "type": "string",
+          "description": "this property is generated, type may be not string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "this property is generated, type may be not string"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "this property is generated, type may be not string"
+        }
+      }
+    }
+  },
+  "responses": {},
+  "parameters": {},
+  "tags": [
+    {
+      "name": "Cluster"
+    }
+  ]
+}

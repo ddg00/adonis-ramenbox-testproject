@@ -1,0 +1,26 @@
+definitions:
+  Cluster:
+    type: object
+    description: "relations \n
+      "
+    properties:
+      id:
+        type: integer
+        description: this property is generated, type may be not integer
+      slug:
+        type: string
+        description: this property is generated, type may be not string
+      name:
+        type: string
+        description: this property is generated, type may be not string
+      published:
+        type: string
+        description: this property is generated, type may be not string
+      created_at:
+        type: string
+        format: date-time
+        description: this property is generated, type may be not string
+      updated_at:
+        type: string
+        format: date-time
+        description: this property is generated, type may be not string
